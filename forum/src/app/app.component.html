@@ -1,9 +1,4 @@
 <h1 class="site-title">All discussions</h1>
 <section class="main-content">
-  <app-blog></app-blog>
-  <app-blog></app-blog>
-  <app-blog></app-blog>
-  <app-blog></app-blog>
-  <app-blog></app-blog>
-  <app-blog></app-blog>
+  <app-blog *ngFor="let blog of blogs" [currentBlog]="blog"></app-blog>  
 </section>

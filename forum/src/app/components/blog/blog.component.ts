@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IBlog } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-blog',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
+  @Input()
+  currentBlog!: IBlog;
 
   constructor() { }
 
