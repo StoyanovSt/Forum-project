@@ -1,0 +1,10 @@
+.site-title {
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

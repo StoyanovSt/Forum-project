@@ -1,0 +1,19 @@
+.blog {
+    width: 450px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    border-top-left-radius: 12px;
+}
+
+.blog-title {
+    background-color: orangered;
+    padding: 10px 0px 15px 15px;
+    border-bottom: 2px solid black;
+}
+
+.about-content {
+    background-color: orange;
+    padding: 10px 0px 15px 15px;
+}
