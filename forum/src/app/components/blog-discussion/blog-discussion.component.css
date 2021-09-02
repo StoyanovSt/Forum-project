@@ -63,3 +63,7 @@ form {
 .messages-list {
   padding-left: 0;
 }
+
+.current-discussion-title {
+  text-align: center;
+}

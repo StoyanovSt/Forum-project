@@ -6,14 +6,14 @@ import { IBlog } from './shared/models';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   public blogs: IBlog[];
 
   constructor() {
     this.blogs = [];
   }
 
-  ngOnInit():void {
+  ngOnInit(): void {
     this.blogs = [
       {
         title: 'Pets',
@@ -28,5 +28,6 @@ export class AppComponent implements OnInit{
         description: 'Some description goes here...'
       }
     ];
+    
   }
 }

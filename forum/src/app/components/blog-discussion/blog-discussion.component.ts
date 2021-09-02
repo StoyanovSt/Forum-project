@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blog-discussion',
@@ -8,10 +9,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BlogDiscussionComponent implements OnInit {
   message!: string;
   messages: string[] = [];
+  currentTheme: string = this.activatedRoute.snapshot.params.currentTheme;
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute ) { }
 
   ngOnInit(): void {
+    
   }
 
   messageSubmitHandler(event: Event, message: HTMLInputElement): void {

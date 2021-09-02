@@ -5,7 +5,7 @@ import { BlogDiscussionComponent } from './components/blog-discussion/blog-discu
 
 const routes: Routes = [
   {
-    path: 'discussion',
+    path: 'discussion/:currentTheme',
     component: BlogDiscussionComponent,
   }
 ];
