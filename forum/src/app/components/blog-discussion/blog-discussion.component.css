@@ -1,6 +1,6 @@
 .content {
   width: 900px;
-  height: 800px;
+  height: fit-content;
   margin-top: 150px;
   border: 2px solid black;
   background-color: goldenrod;
@@ -10,14 +10,14 @@
 
 .message-blog-title {
   position: relative;
-  top: 600px;
+  top: 100px;
   left: 30px;
   font-weight: 600;
 }
 
 .content form input {
   position: relative;
-  top: 600px;
+  top: 100px;
   left: 30px;
   background-color: white;
   outline: none;
@@ -35,11 +35,15 @@
 }
 
 .content form input:nth-child(2) {
-  top: 580px;
+  top: 80px;
   display: block;
   border: 2px solid black;
   border-radius: 12px;
   padding: 5px 25px;
+}
+
+.content form input:nth-child(2):hover {
+  cursor: pointer;
 }
 
 .content input::placeholder {
@@ -48,6 +52,14 @@
 
 i {
   position: relative;
-  top: 556px;
-  left: 50px;
+  top: 55px;
+  left: 35px;
+}
+
+form {
+  margin-bottom: 80px;
+}
+
+.messages-list {
+  padding-left: 0;
 }
