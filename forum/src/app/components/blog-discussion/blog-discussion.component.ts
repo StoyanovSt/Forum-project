@@ -21,6 +21,7 @@ export class BlogDiscussionComponent implements OnInit {
     event.preventDefault();
     this.message = message.value;
     this.messages.push(this.message);
+    message.value = '';
   }
 
 }
